@@ -48,10 +48,10 @@ def main(url,output="output"):
     # print("视频链接：",vidoe_url)
     audio_url = play_json['data']['dash']['audio'][0]['baseUrl']
     # print('音频链接：',audio_url)
-    download(vidoe_url,"video.mp4")
+    # download(vidoe_url,"video.mp4")
     download(audio_url,"audio.mp3")
     #合并音视频
-    mix(title,output)
+    # mix(title,output)
 
 
 if __name__ == "__main__":

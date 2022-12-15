@@ -1,8 +1,12 @@
+from PyQt6 import QtWidgets
+# import PyQt6.
 import sys
-from time import sleep
+app = QtWidgets.QApplication(sys.argv)
 
-import ui_untitled
-from PyQt6.QtWidgets import QApplication, QFrame
-# from PyQt6 import QtCore,QtGui
-from PyQt6.QtCore import Qt
+lab = QtWidgets.QLabel()
+
+lab.setText('你好!!')
+lab.show()
+
+sys.exit(app.exec())
 
