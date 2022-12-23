@@ -1,4 +1,4 @@
-from time import sleep
+from time import sleep,strftime
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 from selenium.webdriver.edge.options import Options
@@ -20,16 +20,16 @@ button_2_id = 'btn416a'#提交表格
 final_text_xpath = "//*[@id='bak_0']/div[2]/div[2]/div[2]/div[2]"   
 # =========================================================================================== 
 user={
-'user_name': '202207070604',
-'password': 'Dwb.20040216',
-#SMTP服务器,这里使用163邮箱
-'mail_host': "smtp.qq.com",
-# 发件人邮箱
-'mail_sender': "2275317692@qq.com",
-# 邮箱授权码,注意这里不是邮箱密码,如何获取邮箱授权码,请看本文最后教程
-'mail_license': "iqncdthwqsejebje",
-# 收件人邮箱，可以为多个收件人
-'mail_receivers': ["duwenba_gongzuo@126.com"]
+    'user_name': '202207070604',
+    'password': 'Dwb.20040216',
+    #SMTP服务器,这里使用163邮箱
+    'mail_host': "smtp.qq.com",
+    # 发件人邮箱
+    'mail_sender': "2275317692@qq.com",
+    # 邮箱授权码,注意这里不是邮箱密码,如何获取邮箱授权码,请看本文最后教程
+        'mail_license': "vsyqjrzvabnzecba",
+    # 收件人邮箱，可以为多个收件人
+    'mail_receivers': ["duwenba_gongzuo@126.com"]
 }
 def log_in(url)  :
     edge_options = Options()
@@ -89,6 +89,4 @@ def mail(msg):
     # 关闭SMTP对象
     stp.quit()
 if __name__ == '__main__':
-    mail(log_in(url))
-    # mail('收到了吗？')�ʼ����ͳɹ�
-    # print("你好")
+            mail(log_in(url))
